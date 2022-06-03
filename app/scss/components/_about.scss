@@ -1,5 +1,43 @@
 .about {
-  padding: 82px 0 70px;
+  &__text {
+    margin: 0 0 50px;
+    max-width: 1235px;
+    line-height: 24px;
+  }
+  &__detailed {
+    position: relative;
+    max-width: 868px;
+  }
+  &__detailed-info {
+    padding: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &__detailed-text {
+    max-width: 454px;
+    line-height: 32px;
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
 
-
+  &__infoblock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 870px;
+    &-item{
+      padding: 65px 120px 65px 300px;
+      background: #FFFFFF;
+border: 1px solid #CACACA;
+    }
+  }
 }

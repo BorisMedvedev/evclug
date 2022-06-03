@@ -73,13 +73,15 @@ img {
 }
 
 .title {
-  margin: 0 0 15px;
+  margin: 0 0 20px;
   font-weight: 400;
-  font-style: normal;
   font-size: 48px;
+  line-height: 59px;
 
  }
-
+.section-padding{
+  padding: 100px 0;
+}
  .btn{
    padding: 25px 37px;
   font-weight: 700;
@@ -102,6 +104,7 @@ img {
   position: relative;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s;
+  outline: none;
   &::before{
     position: absolute;
     top: -5px;
