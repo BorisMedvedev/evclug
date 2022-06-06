@@ -57,3 +57,20 @@ function tabsContent() {
   });
 }
 tabsContent();
+
+
+
+function newAccordion() {
+  new Accordion(".accordion-list", {
+    duration: 600,
+    // openOnInit: [0],
+    elementClass: "accordion",
+    triggerClass: "accordion-list__btn",
+    panelClass: "accordion-list__content",
+    activeClass: "accordion--active",
+  });
+}
+newAccordion();
+
+//new Accordion('.accordion-container');
+

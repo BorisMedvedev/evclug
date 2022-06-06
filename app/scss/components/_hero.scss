@@ -2,6 +2,9 @@
   &__swiper-slide {
     padding: 100px 0;
     color: $white;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
   &__swiper-title {
     margin: 0 0 24px 80px;

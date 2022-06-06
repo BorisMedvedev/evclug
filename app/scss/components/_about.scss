@@ -24,6 +24,7 @@
   }
 
   &__detailed-text {
+    margin: 0;
     max-width: 454px;
     line-height: 32px;
   }
@@ -31,6 +32,11 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    @include r(1200) {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      }
   }
 
   &__infoblock {
