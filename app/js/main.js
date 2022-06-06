@@ -32,3 +32,28 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   heroSlider();
 });
+
+
+function tabsContent() {
+  let tabsBtn = document.querySelectorAll(".btn-list__tab");
+  let tabsItem = document.querySelectorAll(".tabs__content");
+
+  tabsBtn.forEach(function (el) {
+    el.addEventListener("click", function (e) {
+      const path = e.currentTarget.dataset.path;
+
+      tabsBtn.forEach(function (btn) {
+        btn.classList.remove("btn-list__tab--active");
+        e.currentTarget.classList.add("btn-list__tab--active");
+
+        tabsItem.forEach(function (el) {
+          el.classList.remove("tabs__content--active");
+          document
+            .querySelector(`[data-target='${path}']`)
+            .classList.add("tabs__content--active");
+        });
+      });
+    });
+  });
+}
+tabsContent();

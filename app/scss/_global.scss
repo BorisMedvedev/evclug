@@ -78,34 +78,40 @@ img {
   font-size: 48px;
   line-height: 59px;
 
- }
-.section-padding{
+}
+
+.section-padding {
   padding: 100px 0;
 }
- .btn{
-   padding: 25px 37px;
+
+.btn {
+  padding: 20px 37px;
   font-weight: 700;
   font-size: 24;
-    color: #FFFFFF;
+  color: #FFFFFF;
   background-color: #FF9900;
   transition: background-color 0.3s;
-  &:focus{
+
+  &:focus {
     background-color: rgba(255, 153, 0, 0.7);
   }
-  &:hover{
+
+  &:hover {
     background-color: rgba(255, 153, 0, 0.7);
   }
-  &:active{
+
+  &:active {
     background-color: #E1670E;
   }
- }
+}
 
-.ui-kit{
+.ui-kit {
   position: relative;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s;
   outline: none;
-  &::before{
+
+  &::before {
     position: absolute;
     top: -5px;
     bottom: -5px;
@@ -118,25 +124,30 @@ img {
     transition: opacity 0.3s;
 
   }
-  &:focus::before{
+
+  &:focus::before {
     opacity: 1;
 
   }
-  &:hover{
-    border-color:#FF9900;
+
+  &:hover {
+    border-color: #FF9900;
 
   }
-  &:hover::before{
+
+  &:hover::before {
     opacity: 0;
 
   }
-  &:active{
-    border-color:#E1670E;
-    color:#E1670E;
+
+  &:active {
+    border-color: #E1670E;
+    color: #E1670E;
 
 
   }
-  &:active::before{
+
+  &:active::before {
     opacity: 0;
 
   }
